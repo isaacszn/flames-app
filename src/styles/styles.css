@@ -1,21 +1,39 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Header;
+  src: url("../fonts/Gravitas_One/GravitasOne-Regular.ttf");
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .flames-container {
   max-width: 400px;
   margin: 60px auto;
-  padding: 30px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #ff4e50, #f9d423);
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
   color: white;
 }
 
 .flames-container h2 {
+  font-family: Header, serif;
   margin-bottom: 20px;
   font-size: 24px;
 }
 
 .flames-container input {
+  font: inherit;
   width: 80%;
   padding: 10px;
   margin: 10px 0;
@@ -25,6 +43,7 @@
 }
 
 .flames-container button {
+  font: inherit;
   padding: 10px 25px;
   background-color: #ff3366;
   color: white;
@@ -43,4 +62,21 @@
   margin-top: 20px;
   font-weight: bold;
   font-size: 18px;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 15px;
+}
+
+span, a {
+  font-weight: bold;
+  color: red;
+  font-family: Header, serif;
 }

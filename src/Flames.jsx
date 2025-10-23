@@ -5,7 +5,7 @@ const Flames = () => {
   const [name2, setName2] = useState('');
   const [result, setResult] = useState('');
 
-  const flames = ['Friends', 'Lovers', 'Affection', 'Marriage', 'Enemies', 'Siblings'];
+  const flames = ['Friends', 'Lovers', 'Admiration', 'Marriage', 'Enemies', 'Secret lovers'];
 
   const handleFlames = () => {
     if (!name1 || !name2) return setResult('Please enter both names');
@@ -27,6 +27,7 @@ const Flames = () => {
   };
 
   return (
+    <>
     <div className="flames-container">
       <h2>🔥 FLAMES Game 🔥</h2>
       <input
@@ -43,6 +44,8 @@ const Flames = () => {
       <button onClick={handleFlames}>Calculate</button>
       {result && <p className="result">{result}</p>}
     </div>
+    <footer><p>Built by <span><a href='https://zik-site.vercel.app' target='_blank'>Zik</a></span> with <span>&hearts;</span></p></footer>
+    </>
   );
 };
 
